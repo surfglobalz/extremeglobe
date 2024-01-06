@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 8, 2015, 7:28:10 PM
+    Author     : mike
+*/
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    bottom: 0;
+    background: none;
+    background-color: #F4F4F4;
+    border: none;
+    box-shadow: none;
+    color: #666;
+    filter: none;
+    font-size: 1.5em;
+    margin: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-copyright {
+    color: #666;
+    font-size: .75em;
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.footer-phonenumber {
+    color: #666;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center; 
+    vertical-align: middle;    
+}
+
+.footer-social-container {
+    text-align: center; 
+    vertical-align: middle;
+}
+
+/* Social Network Icons */
+ul.social-links {
+    overflow: auto;
+}
+
+ul.social-links li {
+    color: #666;
+    display: inline;
+    list-style-type: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+ul.social-links li a i {
+    color: #666;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+ul.social-links li a i {
+    transition: all 0.2s ease-in-out;
+}
+
+ul.social-links li a i:hover {
+    opacity: .7;
+}
+

@@ -1,0 +1,337 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 22, 2015, 3:24:35 PM
+    Author     : mike
+*/
+
+/*Import Global Compulsory CSS Files*/
+@import url(fonts.css);
+@import url(footer.css);
+@import url(navbar.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    background-color: #fff;
+    font-family: "Helvetica Neue", Ariel, sans-serif;
+    height: 100%;
+    margin: 0px;
+    min-height: 500px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+a {
+    color: #666;
+}
+a:hover {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom:  20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.carousel-caption {
+	padding-bottom: 30px;	
+}
+
+.carousel-caption {
+    text-shadow: 3px 3px 3px black;
+    z-index: 10;
+}
+
+.carousel-inner {
+	width:100%;
+	max-height: 500px !important;
+}
+
+.circle-blue {
+    background-color: #0D8FD8;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+    height: 150px;
+    line-height: 150px;
+    margin: auto;
+    text-align: center;
+    width: 150px;
+}
+
+.circle-green {
+    background-color: #39DBAC;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+    height: 150px;
+    line-height: 150px;
+    margin: auto;
+    text-align: center;
+    width: 150px;
+}
+
+.error {
+    color: crimson;
+}
+
+/* We need to set the margin-top to the -height of the navbar along with the padding-top
+   to the height of the navbar so when we scroll to a featurette section from a link, part of it
+   won't be hidden by the navbar. */
+.featurette {
+	margin-top: -90px;
+	padding-top: 90px;
+}
+
+.globalnet-marketing {
+	font-size: 1.25em;
+}
+
+/* Notes Icons */
+.gnet-icon-pencil {
+    color: #337ab7;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.gnet-icon-trash {
+    color: crimson;
+}
+
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:450px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../images/cancel_48.png) no-repeat 395px center;
+    display:none;
+}
+
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+
+#errors li:before {
+    content: ' - ';    
+}
+
+#errors #info {
+    font-weight:bold;
+}
+
+#errors #info:before {
+    content: '';    
+}
+
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:450px; 
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3 url(../images/accepted_48.png) no-repeat 395px center;
+    font-weight:bold;
+    display:none;
+}
+
+#errors.visible, #success.visible {
+    display:block;    
+}
+
+/* FORM CSS */
+
+#form {
+    background-color: #F4F4F4;
+    border: 6px solid #666;
+    border-radius: 15px;
+    margin: 20px auto; 
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+#form h1 {
+    font-size: 42px;
+}
+
+#form h2 {
+    margin-bottom: 15px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#form input, 
+#form select, 
+#form textarea, 
+#form label {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+#form input, 
+#form select, 
+#form textarea {
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    min-width: 100%;
+    padding: 4px;
+    width: auto;
+}
+
+#form input:focus, 
+#form select:focus, 
+#form textarea:focus {
+    background-color: #EBF2F4;
+    border: 1px solid #666;
+}
+
+#form textarea {
+    height: auto;
+    resize: none;
+}
+
+#form .radio{
+    margin-left: -20px;
+    margin-bottom: 2px; 
+    min-width: 0%;
+    position: absolute;
+}
+
+#form .radio-inline {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 2px; 
+    padding-left: 20px;
+    position: relative;
+    vertical-align: middle;
+}
+
+#form .required {
+    font-weight: bold;
+    color: #F00;    
+}
+
+#form #submit-button {
+    background-color: #666;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    float: right;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    min-width: 100px;
+    white-space: nowrap;
+    -moz-border-radius: 8px;
+}
+
+#form #submit-button:hover {
+    background-color: black;
+}
+
+#form #submit-button:active {
+    position: relative;
+    top: 1px;
+}
+
+#content {
+    padding-top: 84px;       /* Height of the navbar element */
+/*    padding-bottom: 0px; */
+
+}
+
+#main {
+    clear: both;
+    overflow: auto;
+    padding: 50px;
+    width: 100%;
+}
+
+#productCarousel {
+	margin-bottom: 60px;
+}
+
+#featurette1 {
+	margin-top: 10px;
+}
+#wrapper {
+/*    margin: 0 auto -190px; /* the bottom margin is the negative value of the footer's height */
+    min-height: 100%;
+    padding-left: 0;
+    padding-bottom: 190px;
+    position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+    #wrapper {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 667px) {
+    #content {
+        padding-bottom: 275px;
+    }
+}
+
+@media (max-width: 375px) {
+    #content {
+        padding-bottom: 600px;
+    }
+}
+

@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* 
+    Created on : Jan 22, 2015, 4:49:44 PM
+    Author     : mike
+*/
+
+@font-face {
+    font-family: 'BT One Thin';
+    src: url("assets/fonts/bt_one-thin-webfont.eot") format("embedded-opentype"), url("assets/fonts/bt_one-thin-webfont.woff") format("woff"), url("assets/fonts/bt_one-thin-webfont.ttf") format("truetype"), url("assets/fonts/bt_one-thin.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BT One Thin Demibold';
+    src: url("../fonts/bt_one-demibold-webfont.eot");
+    src: url("../fonts/bt_one-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bt_one-demibold-webfont.woff") format("woff"), url("fonts/bt_one-demibold-webfont.ttf") format("truetype"), url("fonts/bt_one-demibold-webfont.svg#bt_one_thinthin") format("svg");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'BT One Heavy';
+    src: url("../fonts/bt_one-extracondensed_heavy-webfont.eot");
+    src: url("../fonts/bt_one-extracondensed_heavy-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bt_one-extracondensed_heavy-webfont.woff") format("woff"), url("fonts/bt_one-extracondensed_heavy-webfont.ttf") format("truetype"), url("fonts/bt_one-extracondensed_heavy-webfont.svg#bt_one_thinthin") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fontello';
+    src: url("../fonts/fontello.eot");
+    src: url("../fonts/fontello.eot?#iefix") format("embedded-opentype"), url("fonts/fontello.woff") format("woff"), url("fonts/fontello.ttf") format("truetype"), url("fonts/fontello.svg#fontello") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
